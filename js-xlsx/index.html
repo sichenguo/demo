@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script> -->
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+
+
+</html>
+<script src="./plugins/jQuery/jquery-3.1.1.min.js"></script>
+<script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
+<!-- 导出excel -->
+<script src="http://oss.sheetjs.com/js-xlsx/xlsx.full.min.js"></script>
+<script src="./plugins/excel/cpexcel.js"></script>
+<script src="./plugins/excel/jszip.js"></script>
+<script src="./plugins/excel/shim.js"></script>
+<script src="./plugins/excel/xlsx.js"></script>
+
+<script>
+
+
+  let baseurl = 'https://www.easy-mock.com/mock/5afea0176ba6060f61c231ba/example/';
+  let App = new Vue({
+    el: '#app',
+    template: ` <div>
+                  <button @click='requestData'>导出表格</button> <a href="" download="微信运营数据表.xlsx" id="hf"></a>
+                </div> `,
+    data: {},
+    methods: {
+      requestData: function requestData() {
+        $.ajax({
+          url: baseurl + "api/exportData",
+          type: "get",
+        }).done(function (e) {
+          if (e.code !== 1000001) {
+            alert(e.msg);
+            return;
+          };
+          if (e.data == null) {
+            alert("没有数据");
+          }
+          var o = [];
+          e.data.exportData.forEach(function (it) {
+
+            it.weChatList.forEach(function (oit) {
+              var oitem = {};
+              oitem.groupName = it.groupName.replace(/<span\s*[^>]*>(.*?)<\/span>/g, "");
+              oitem.contentUserName = oit.contentUserName.replace(/<span\s*[^>]*>(.*?)<\/span>/g, "");
+              oitem.contentData = oit.contentData;
+              oitem.insertDate = oit.insertDate;
+              o.push(oitem);
+            });
+          });
+
+          if (o.length === 0) {
+            alert("暂无数据");
+            return;
+          }
+
+          $("#hf").attr("download", "导出数据.xlsx");
+          this.handleData(o);
+        }.bind(this));
+      },
+      //处理excel数据
+      handleData: function handleData(data) {
+        var allData = data;
+        var excelData = [],
+          excelList = [],
+          excelTitle = ["群名", "昵称", "详情", "发布时间"];
+        allData.forEach(function (item, index) {
+          excelList = [item.groupName, item.contentUserName, item.contentData, this.handleTime(item.insertDate, true)];
+          var i = 0;
+          var jsonObj = {};
+          excelTitle.forEach(function (item) {
+            jsonObj[item] = i;
+            i++;
+          });
+
+          for (var key in jsonObj) {
+            jsonObj[key] = excelList[jsonObj[key]];
+          }
+          var o = JSON.stringify(jsonObj);
+          excelData[index] = o;
+          jsonObj = null;
+          excelData[index] = JSON.parse(excelData[index]);
+        }.bind(this));
+
+        this.exportExcel(excelData);
+      },
+      exportExcel: function (data) {
+        this.downloadExl(data);
+      },
+      // 导出excel
+
+      downloadExl: function (json, type) {
+        var tmpDown; // 导出的二进制对象
+        json = JSON.parse(JSON.stringify(json));
+        var tmpdata = json[0];
+        json.unshift({});
+        var keyMap = []; // 获取keys
+        for (var k in tmpdata) {
+          keyMap.push(k);
+          json[0][k] = k;
+        }
+        var tmpdata = []; // 用来保存转换好的json 
+        json.map(function (v, i) {
+          return keyMap.map(function (k, j) {
+            return Object.assign({}, {
+              v: v[k],
+              position: (j > 25 ? this.getCharCol(j) : String.fromCharCode(65 + j)) + (i + 1)
+            });
+          });
+        }.bind(this)).reduce(function (prev, next) {
+          return prev.concat(next);
+        }).forEach(function (v, i) {
+          return tmpdata[v.position] = {
+            v: v.v
+          };
+        });
+        var outputPos = Object.keys(tmpdata); // 设置区域,比如表格从A1到D10
+        var tmpWB = {
+          SheetNames: ['mySheet'], // 保存的表标题
+          Sheets: {
+            'mySheet': Object.assign({}, tmpdata, // 内容
+              {
+                '!ref': outputPos[0] + ':' + outputPos[outputPos.length - 1] // 设置填充区域
+              })
+          }
+        };
+        tmpDown = new Blob([this.s2ab(XLSX.write(tmpWB, {
+          bookType: type == undefined ? 'xlsx' : type,
+          bookSST: false,
+          type: 'binary' // 这里的数据是用来定义导出的格式类型
+        }))], {
+            type: ''
+          }); // 创建二进制对象写入转换好的字节流
+        var href = URL.createObjectURL(tmpDown); // 创建对象超链接
+        document.getElementById('hf').href = href; // 绑定a标签
+        document.getElementById('hf').click(); // 模拟点击实现下载
+        setTimeout(function () {
+          // 延时释放
+          URL.revokeObjectURL(tmpDown); // 用URL.revokeObjectURL()来释放这个object URL
+        }, 100);
+      },
+      s2ab: function (s) {
+        // 字符串转字符流
+        var buf = new ArrayBuffer(s.length);
+        var view = new Uint8Array(buf);
+        for (var i = 0; i != s.length; ++i) {
+          view[i] = s.charCodeAt(i) & 0xFF;
+        }
+        return buf;
+      },
+      // 将指定的自然数转换为26进制表示。映射关系：[0-25] -> [A-Z]。
+      getCharCol: function (n) {
+        var temCol = '',
+          s = '',
+          m = 0;
+        while (n > 0) {
+          m = n % 26 + 1;
+          s = String.fromCharCode(m + 64) + s;
+          n = (n - m) / 26;
+        }
+        return s;
+      },
+      handleTime: function (timestr, a) {
+        var num = Number(timestr)
+        var newTime = new Date(num)
+        var min = newTime.getMinutes()
+        var hour = newTime.getHours()
+        var mon = newTime.getMonth() + 1
+        var date = newTime.getDate()
+        var seconds = newTime.getSeconds()
+        if (min < 10) {
+          min = '0' + min.toString()
+        }
+        if (hour < 10) {
+          hour = '0' + hour.toString()
+        }
+        if (mon < 10) {
+          mon = '0' + mon.toString()
+        }
+        if (date < 10) {
+          date = '0' + date.toString()
+        }
+        return timestr = a ? newTime.getFullYear() + '-' + (newTime.getMonth() + 1) + '-' + newTime.getDate() + '  ' + hour + ':' + min + ':' + seconds :
+          newTime.getFullYear() + '-' + mon + '-' + date;
+      }
+    }
+  })
+</script>

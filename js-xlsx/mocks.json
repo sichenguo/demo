@@ -1,0 +1,277 @@
+{
+  "code": 1000001,
+  "msg": "",
+  "data": {
+    "exportData": [
+      {
+        "groupName": "河北车商圈",
+        "weChatList": []
+      },
+      {
+        "groupName": "河北车商圈1",
+        "weChatList": [
+          {
+            "id": 10,
+            "contentData": "寻",
+            "msgId": "4493129442890802623",
+            "contentDesc": "<span class=\"emoji emoji1f525\"></span>飞度888下500交强加200意外险<span class=\"emoji emoji1f525\"></span>飞度918下500交强加200意外险<span class=\"emoji emoji1f525\"></span>飞度858下500交强加200意外险<span class=\"emoji emoji1f4a7\"></span>热线电话：18172723855",
+            "contentType": 0,
+            "contentUserId": "@087493ad37564cc8c4f04ce36fb82913264a77bba7309f6bdb946f1918ce89fa",
+            "contentUserName": "unknown",
+            "msgTypeId": 3,
+            "toUserId": "@0d6df4d72876d15dd5ec0a14b244efb5e3a2c0312d01193ed47f5824f8f6ecdf",
+            "userId": "@@c361b94ce52af34ea24ad3e3e5b0b0a7c03c15c2a4263fd0f50abb7fa83aabb4",
+            "userName": "河北车商圈1",
+            "insertDate": 1512713885000,
+            "editContent": null,
+            "importType": 0,
+            "monitorNickname": null,
+            "avatarUrl": null
+          }
+        ]
+      },
+      {
+        "groupName": "河北车商圈11",
+        "weChatList": [
+          {
+            "id": 54,
+            "contentData": "寻",
+            "msgId": "5128687319307486598",
+            "contentDesc": "XRV1378白下3000店保八五折CRV2038白 黑加3500店保八五折XRV1498白下2500店保现车CRV1798白加4000店保八五折在途URV2928白黑下10000思域1699白加2000店保CRV2138白加1000店保抢到就是赚到<span class=\"emoji emoji1f4de\"></span>18172723855小刘",
+            "contentType": 0,
+            "contentUserId": "@087493ad37564cc8c4f04ce36fb82913264a77bba7309f6bdb946f1918ce89fa",
+            "contentUserName": "unknown",
+            "msgTypeId": 3,
+            "toUserId": "@0d6df4d72876d15dd5ec0a14b244efb5e3a2c0312d01193ed47f5824f8f6ecdf",
+            "userId": "@@c361b94ce52af34ea24ad3e3e5b0b0a7c03c15c2a4263fd0f50abb7fa83aabb4",
+            "userName": "河北车商圈11",
+            "insertDate": 1512714625000,
+            "editContent": null,
+            "importType": 0,
+            "monitorNickname": "卖好车-思思",
+            "avatarUrl": null
+          }
+        ]
+      },
+      {
+        "groupName": "河北车商圈12",
+        "weChatList": [
+          {
+            "id": 63,
+            "contentData": "寻",
+            "msgId": "1367098047390332289",
+            "contentDesc": "赛欧799橙优惠22000乐风999白优惠18500科沃兹909白手动，自动优惠19000交强+车损险抢购热线：18172723855小刘",
+            "contentType": 0,
+            "contentUserId": "@087493ad37564cc8c4f04ce36fb82913264a77bba7309f6bdb946f1918ce89fa",
+            "contentUserName": "unknown",
+            "msgTypeId": 3,
+            "toUserId": "@0d6df4d72876d15dd5ec0a14b244efb5e3a2c0312d01193ed47f5824f8f6ecdf",
+            "userId": "@@c361b94ce52af34ea24ad3e3e5b0b0a7c03c15c2a4263fd0f50abb7fa83aabb4",
+            "userName": "河北车商圈12",
+            "insertDate": 1512715202000,
+            "editContent": null,
+            "importType": 0,
+            "monitorNickname": null,
+            "avatarUrl": null
+          }
+        ]
+      },
+      {
+        "groupName": "河北车商圈13",
+        "weChatList": [
+          {
+            "id": 64,
+            "contentData": "寻",
+            "msgId": "2104089833660710274",
+            "contentDesc": "比亚迪  宋   MAX  1099白蓝马上到车  1199白蓝 马上到车FO       38900<span class=\"emoji emoji2b07\"></span>️6000          43900<span class=\"emoji emoji2b07\"></span>️5500F3        43900<span class=\"emoji emoji2b07\"></span>️9000          51900↓8500\r          55900<spa",
+            "contentType": 0,
+            "contentUserId": "@bd5de69fd69580d667f0c399d483021b67db630567fea747197c37d07daf8a02",
+            "contentUserName": "unknown",
+            "msgTypeId": 3,
+            "toUserId": "@0d6df4d72876d15dd5ec0a14b244efb5e3a2c0312d01193ed47f5824f8f6ecdf",
+            "userId": "@@c361b94ce52af34ea24ad3e3e5b0b0a7c03c15c2a4263fd0f50abb7fa83aabb4",
+            "userName": "河北车商圈13",
+            "insertDate": 1512715428000,
+            "editContent": null,
+            "importType": 0,
+            "monitorNickname": null,
+            "avatarUrl": null
+          }
+        ]
+      },
+      {
+        "groupName": "河北车商圈14",
+        "weChatList": [
+          {
+            "id": 65,
+            "contentData": "寻",
+            "msgId": "2720378724137382315",
+            "contentDesc": "<span class=\"emoji emoji26a1\"></span>️<span class=\"emoji emoji26a1\"></span>️最新政策店车店票裸车<span class=\"emoji emoji26a1\"></span>️<span class=\"emoji emoji26a1\"></span>️ ！订金已打不用落实！飘全国 老款捷达799白优惠22000×5公户 捷达799白银优惠18000 捷达856银灰白优惠18000 捷达919灰白优惠18000 捷达1076白棕优惠18",
+            "contentType": 0,
+            "contentUserId": "@d0e7bb40c57a67fd8fcda1055344bcf3a5c064cb3442575fe601713b9ef7dd65",
+            "contentUserName": "unknown",
+            "msgTypeId": 3,
+            "toUserId": "@0d6df4d72876d15dd5ec0a14b244efb5e3a2c0312d01193ed47f5824f8f6ecdf",
+            "userId": "@@c361b94ce52af34ea24ad3e3e5b0b0a7c03c15c2a4263fd0f50abb7fa83aabb4",
+            "userName": "河北车商圈14",
+            "insertDate": 1512715605000,
+            "editContent": null,
+            "importType": 0,
+            "monitorNickname": null,
+            "avatarUrl": null
+          }
+        ]
+      },
+      {
+        "groupName": "河北车商圈15",
+        "weChatList": [
+          {
+            "id": 66,
+            "contentData": "寻",
+            "msgId": "6531991101390456905",
+            "contentDesc": "山东急出车型速腾1508白21000,17 吉林速腾1728灰24000 速腾1628银灰24000 速腾1408灰金银24000 速腾1528银24000 江苏急出宝来1318银25000,17 急出宝来1198自白金24500,18 急出宝来1078白24000,18 山东，辽宁急出cc2688白金46500 辽宁急出高尔夫1549白金22000 安徽急出捷达856白18000 急出捷达799灰银18000 急出捷达976银18000 急出捷达956白灰18000 急出捷达919白18000 辽宁嘉旅",
+            "contentType": 0,
+            "contentUserId": "@d0e7bb40c57a67fd8fcda1055344bcf3a5c064cb3442575fe601713b9ef7dd65",
+            "contentUserName": "unknown",
+            "msgTypeId": 3,
+            "toUserId": "@0d6df4d72876d15dd5ec0a14b244efb5e3a2c0312d01193ed47f5824f8f6ecdf",
+            "userId": "@@c361b94ce52af34ea24ad3e3e5b0b0a7c03c15c2a4263fd0f50abb7fa83aabb4",
+            "userName": "河北车商圈15",
+            "insertDate": 1512715605000,
+            "editContent": null,
+            "importType": 0,
+            "monitorNickname": null,
+            "avatarUrl": null
+          }
+        ]
+      },
+      {
+        "groupName": "河北车商圈2",
+        "weChatList": [
+          {
+            "id": 13,
+            "contentData": "寻",
+            "msgId": "1291113429738344119",
+            "contentDesc": "<span class=\"emoji emoji26a1\"></span>️<span class=\"emoji emoji26a1\"></span>️最新政策店车店票裸车<span class=\"emoji emoji26a1\"></span>️<span class=\"emoji emoji26a1\"></span>️ ！订金已打不用落实！飘全国 老款捷达799白优惠22000×5公户 捷达799白银优惠18000 捷达856银灰白优惠18000 捷达919灰白优惠18000 捷达1076白棕优惠18",
+            "contentType": 0,
+            "contentUserId": "@d0e7bb40c57a67fd8fcda1055344bcf3a5c064cb3442575fe601713b9ef7dd65",
+            "contentUserName": "unknown",
+            "msgTypeId": 3,
+            "toUserId": "@0d6df4d72876d15dd5ec0a14b244efb5e3a2c0312d01193ed47f5824f8f6ecdf",
+            "userId": "@@c361b94ce52af34ea24ad3e3e5b0b0a7c03c15c2a4263fd0f50abb7fa83aabb4",
+            "userName": "河北车商圈2",
+            "insertDate": 1512714104000,
+            "editContent": null,
+            "importType": 0,
+            "monitorNickname": null,
+            "avatarUrl": null
+          }
+        ]
+      },
+      {
+        "groupName": "河北车商圈3",
+        "weChatList": [
+          {
+            "id": 14,
+            "contentData": "寻",
+            "msgId": "61340740356849227",
+            "contentDesc": "山东急出车型速腾1508白21000,17 吉林速腾1728灰24000 速腾1628银灰24000 速腾1408灰金银24000 速腾1528银24000 江苏急出宝来1318银25000,17 急出宝来1198自白金24500,18 急出宝来1078白24000,18 山东，辽宁急出cc2688白金46500 辽宁急出高尔夫1549白金22000 安徽急出捷达856白18000 急出捷达799灰银18000 急出捷达976银18000 急出捷达956白灰18000 急出捷达919白18000 辽宁嘉旅",
+            "contentType": 0,
+            "contentUserId": "@d0e7bb40c57a67fd8fcda1055344bcf3a5c064cb3442575fe601713b9ef7dd65",
+            "contentUserName": "unknown",
+            "msgTypeId": 3,
+            "toUserId": "@0d6df4d72876d15dd5ec0a14b244efb5e3a2c0312d01193ed47f5824f8f6ecdf",
+            "userId": "@@c361b94ce52af34ea24ad3e3e5b0b0a7c03c15c2a4263fd0f50abb7fa83aabb4",
+            "userName": "河北车商圈3",
+            "insertDate": 1512714104000,
+            "editContent": null,
+            "importType": 0,
+            "monitorNickname": null,
+            "avatarUrl": null
+          }
+        ]
+      },
+      {
+        "groupName": "河北车商圈4",
+        "weChatList": [
+          {
+            "id": 25,
+            "contentData": "寻",
+            "msgId": "541613451945096754",
+            "contentDesc": "<span class=\"emoji emoji1f525\"></span>科沃兹909手动棕 下19000        科沃兹909自动白 下19000        科沃兹999黑  下 19000    以上车型都要店保  准户来抢购热线：18172723855小刘<span class=\"emoji emoji2764\"></span>",
+            "contentType": 0,
+            "contentUserId": "@087493ad37564cc8c4f04ce36fb82913264a77bba7309f6bdb946f1918ce89fa",
+            "contentUserName": "unknown",
+            "msgTypeId": 3,
+            "toUserId": "@0d6df4d72876d15dd5ec0a14b244efb5e3a2c0312d01193ed47f5824f8f6ecdf",
+            "userId": "@@c361b94ce52af34ea24ad3e3e5b0b0a7c03c15c2a4263fd0f50abb7fa83aabb4",
+            "userName": "河北车商圈4",
+            "insertDate": 1512714356000,
+            "editContent": null,
+            "importType": 0,
+            "monitorNickname": null,
+            "avatarUrl": null
+          }
+        ]
+      },
+      {
+        "groupName": "河北车商圈5",
+        "weChatList": []
+      },
+      {
+        "groupName": "河北车商圈6",
+        "weChatList": [
+          {
+            "id": 36,
+            "contentData": "寻",
+            "msgId": "6356571054011735232",
+            "contentDesc": "",
+            "contentType": 0,
+            "contentUserId": "@dc3c0d957b37aab2f15fff4924a25c7ee996d4010999aeaf662c310deee146c3",
+            "contentUserName": "unknown",
+            "msgTypeId": 3,
+            "toUserId": "@0d6df4d72876d15dd5ec0a14b244efb5e3a2c0312d01193ed47f5824f8f6ecdf",
+            "userId": "@@ce91c9c91f0e752a1d56cea04214544795f6fbb0765a5268e8293c1b96efda73",
+            "userName": "河北车商圈6",
+            "insertDate": 1512714505000,
+            "editContent": null,
+            "importType": 0,
+            "monitorNickname": null,
+            "avatarUrl": null
+          }
+        ]
+      },
+      {
+        "groupName": "河北车商圈7",
+        "weChatList": []
+      },
+      {
+        "groupName": "河北车商圈8",
+        "weChatList": [
+          {
+            "id": 45,
+            "contentData": "寻",
+            "msgId": "2093356406340573396",
+            "contentDesc": "郑州宝路德汽车销售有限公司：   现诚聘汽车销售顾问10名岗位职责：①   负责整车销售服务和进店客户咨询服务②挖掘客户需求，实现产品销售任职要求：①   20岁—28岁，男女不限。②   工作态度积极，热爱汽车销售工作③   良好的团队协作精神和客户服务意识工资待遇： 底薪+提成  月薪8000~20000元福利待遇①公司安排有员工宿舍，24小时热水供应，Wifi覆盖。带客厅，阳台, 免费提供燃气设施设备（员工可做饭），全自动洗衣机等。独立卫生间。家具齐全，拎包入住.②五险一金③每月定期举行员工聚餐，每",
+            "contentType": 0,
+            "contentUserId": "@f7a17a8b87a879c1b27717612c437881a5d71f4a0775c0d74adaec122affdd19",
+            "contentUserName": "unknown",
+            "msgTypeId": 3,
+            "toUserId": "@0d6df4d72876d15dd5ec0a14b244efb5e3a2c0312d01193ed47f5824f8f6ecdf",
+            "userId": "@@c361b94ce52af34ea24ad3e3e5b0b0a7c03c15c2a4263fd0f50abb7fa83aabb4",
+            "userName": "河北车商圈8",
+            "insertDate": 1512714555000,
+            "editContent": null,
+            "importType": 0,
+            "monitorNickname": "AAA~东莞奔瑞~吴燕",
+            "avatarUrl": null
+          }
+        ]
+      },
+      {
+        "groupName": "河北车商圈9",
+        "weChatList": []
+      }
+    ]
+  }
+}
