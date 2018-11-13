@@ -115,7 +115,8 @@
     git checkout master
     git merge –no-ff fixbug/20180926
     git tag -a xxx
-    
+  
+  
 - 再合并到 dev 分支：
 
     git checkout dev
