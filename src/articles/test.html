@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @keyframes warn {
+            0% {
+                transform: scale(0.3);
+                -webkit-transform: scale(0.3);
+                opacity: 0;
+            }
+    
+            25% {
+                transform: scale(0.3);
+                -webkit-transform: scale(0.3);
+                opacity: 0.1;
+            }
+    
+            50% {
+                transform: scale(0.5);
+                -webkit-transform: scale(0.5);
+                opacity: 0.3;
+            }
+    
+            75% {
+                transform: scale(0.8);
+                -webkit-transform: scale(0.8);
+                opacity: 0.5;
+            }
+    
+            100% {
+                transform: scale(1);
+                -webkit-transform: scale(1);
+                opacity: 0.0;
+            }
+        }
+    
+        @keyframes warn1 {
+            0% {
+                transform: scale(0.3);
+                -webkit-transform: scale(0.3);
+                opacity: 0.0;
+            }
+    
+            25% {
+                transform: scale(0.3);
+                -webkit-transform: scale(0.3);
+                opacity: 0.1;
+            }
+    
+            50% {
+                transform: scale(0.3);
+                -webkit-transform: scale(0.3);
+                opacity: 0.3;
+            }
+    
+            75% {
+                transform: scale(0.5);
+                -webkit-transform: scale(0.5);
+                opacity: 0.5;
+            }
+    
+            100% {
+                transform: scale(0.8);
+                -webkit-transform: scale(0.8);
+                opacity: 0.0;
+            }
+        }
+    
+        .container {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            left: 10px;
+            top: 10px;
+            padding: 100px auto;
+        }
+    
+    
+    
+        .dot {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 160px;
+            top: 160px;
+            border: 1px solid #33ccff;
+            border-radius: 50%;
+            background-color: #33ccff;
+            z-index: 2;
+        }
+    
+    
+        .pulse {
+            position: absolute;
+            width: 88px;
+            height: 88px;
+            left: 120px;
+            top: 120px;
+            border: 2px solid #3399ff;
+            border-radius: 50%;
+            z-index: 1;
+            opacity: 0;
+            animation: warn 2s ease-out;
+            animation-iteration-count: infinite;
+    
+        }
+    
+    
+        .pulse1 {
+            position: absolute;
+            width: 88px;
+            height: 88px;
+            left: 120px;
+            top: 120px;
+            border: 2px solid #3399ff;
+            border-radius: 50%;
+            z-index: 1;
+            opacity: 0;
+            animation: warn1 2s ease-out;
+            animation-iteration-count: infinite;
+    
+        }
+        
+        
+    </style>
+</head>
+ 
+<body>
+   
+        
+        <div class="container">
+            <div class="dot"></div>
+            <div class="pulse"></div>
+            <div class="pulse1"></div>
+        </div>
+       
+</body>
+ 
+</html>
